@@ -76,8 +76,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      <div className="stats lg:w-1/2 lg:ml-5">
+      {/* md:w-1/2 md:px-30 py-5 overflow-hidden mt-[-100px] ml-[40px] */}
+      <div className="stats lg:w-1/2 lg:ml-5 postion lg:relative lg:-top-24">
         <div className="stat flex flex-col items-center">
           <span className="stat-value">6+</span>
           <span className="stat-label">Projects Done</span>
