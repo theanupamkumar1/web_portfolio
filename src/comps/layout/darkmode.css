@@ -1,0 +1,111 @@
+/* darkmode.css */
+body[data-theme='dark'] {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body[data-theme='dark'] .navbar {
+    background-color: #444;
+
+  }
+  
+  body[data-theme='dark'] .hero-section {
+    background-color: #555;
+  }
+  
+  body[data-theme='dark'] .hero-section {
+    background-color: #555;
+  }
+  body[data-theme='dark'] .dark-mode {
+    background-color: #444;
+    color: #fff;
+}body[data-theme='dark'] .hero-section {
+  background-color: #333;
+  color: #fff;
+}
+
+body[data-theme='dark'] .hero-text h1 {
+  color: #fff;
+}
+
+body[data-theme='dark'] .hero-text p {
+  color: #aaa;
+}
+
+body[data-theme='dark'] .hire-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+body[data-theme='dark'] .previous-works-btn {
+  background-color: #444;
+  color: #fff;
+}
+
+body[data-theme='dark'] .stat-value {
+  color: #fff;
+}
+
+body[data-theme='dark'] .stat-label {
+  color: #aaa;
+}
+body[data-theme='dark'] #project {
+  background-color: #333;
+}
+
+body[data-theme='dark'] .text-5xl {
+  color: #fff;
+}
+
+body[data-theme='dark'] .w-70 {
+  background-color: #444;
+}
+
+body[data-theme='dark'] .text-white {
+  color: #fff;
+}
+
+body[data-theme='dark'] .text-gray-300 {
+  color: #aaa;
+}
+
+body[data-theme='dark'] .bg-green-500 {
+  background-color: #fff;
+  color: #333;
+}
+body[data-theme='dark'] #skills {
+  background-color: #333;
+}
+
+body[data-theme='dark'] .text-5xl {
+  color: #fff;
+}
+
+body[data-theme='dark'] .bg-gray-800 {
+  background-color: #444;
+}
+
+body[data-theme='dark'] .text-white {
+  color: #fff;
+}
+
+body[data-theme='dark'] .text-gray-300 {
+  color: #aaa;
+}
+
+body[data-theme='dark'] .bg-purple-500 {
+  background-color: #fff;
+  color: #333;
+}
+
+body[data-theme='dark'] .bg-gray-700 {
+  background-color: #555;
+}
+
+body[data-theme='dark'] .border-purple {
+  border-color: #777;
+}
+
+body[data-theme='dark'] .border-skyblue {
+  border-color: #888;
+}
