@@ -128,6 +128,7 @@ body {
   @media (max-width: 768px) {
     .hero-section {
       width: 100%;
+      overflow: visible;
       height: auto;
     }
     .hero-content {
@@ -138,8 +139,8 @@ body {
     .img.hero-image{
       max-width: 100%;
       height: auto;
-      border-right: 100px;
-      border-bottom:200px ;
+      border-right: 45%;
+      border-bottom:45%;
     }
     .hero-text {
       max-width: none;
@@ -151,8 +152,8 @@ body {
       flex-direction: column;
       align-items: center;
       padding: 2rem 1rem;
-      margin-top:0.5rem ;
-      margin-left: 0.5rem;
+      margin-top:1 rem ;
+      /* margin-left: 0.5rem; */
     }
   
     .stat {
