@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div
       id="about"
-      className="hero-section flex flex-col h-screen w-screen mt-[80px]  overflow-visible"
+      className="hero-section flex flex-col h-screen w-screen mt-[80px] md:h-auto overflow-visible"
     >
       <div className="hero-content h-auto md:w-full md:ml-[40px]">
         <div className="hero-text">
