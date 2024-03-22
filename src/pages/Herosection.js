@@ -77,7 +77,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="stats">
+      <div className="stats lg:w-1/2 lg:ml-5">
         <div className="stat flex flex-col items-center">
           <span className="stat-value">6+</span>
           <span className="stat-label">Projects Done</span>
