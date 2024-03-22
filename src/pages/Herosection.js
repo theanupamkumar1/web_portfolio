@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="about"
       className="hero-section flex flex-col h-screen w-screen mt-[80px]  overflow-hidden"
     >
-      <div className="hero-content md:w-full md:w-1/2 md:ml-[40px]">
+      <div className="hero-content md:h-auto md:w-full md:ml-[40px]">
         <div className="hero-text">
           <h1 className="font-bold">I'm Anupam Kumar </h1>
           <p>
