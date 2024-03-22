@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="about"
       className="hero-section flex flex-col h-screen w-screen mt-[80px]  overflow-hidden"
     >
-      <div className="hero-content md:h-auto md:w-full md:ml-[40px]">
+      <div className="hero-content h-auto md:w-full md:ml-[40px]">
         <div className="hero-text">
           <h1 className="font-bold">I'm Anupam Kumar </h1>
           <p>
@@ -66,7 +66,7 @@ const HeroSection = () => {
         </div>
       </div> */}
 
-        <div className=" bg-hero-image bg-gradient-to-r from-fuchsia-500 to-cyan-500 rounded-t-full  rounded-br-full">
+        <div className=" h-auto bg-hero-image bg-cover bg-center bg-gradient-to-r from-fuchsia-500 to-cyan-500 rounded-t-full  rounded-br-full">
           <div className="hero-image m-4  ">
             <img
               className="hero-image w-96 h-96 rounded-br-[150px] md:rounded-br-[200px]"
