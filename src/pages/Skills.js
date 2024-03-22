@@ -54,7 +54,7 @@ const Skills = () => (
       </div>
       <div className="flex justify-center mt-20 ">
         <a
-          href="https://drive.google.com/file/d/1QA9II1CJWg-1BkTI33ZD4lNZf3SGxvv0/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1mW368ZjyNgGjofS7pAvdI9_i3S9CwQcp/view"
           download
           className="bg-purple-500 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
           target="_blank"
