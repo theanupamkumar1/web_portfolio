@@ -12,15 +12,18 @@ const HeroSection = () => {
         <div className="hero-text">
           <h1 className="font-bold">I'm Anupam Kumar </h1>
           <p>
-            A{" "}
+            An
+            <span className="text-purple font-bold px-2 py-1 rounded">
+              AI Engineer,
+            </span>
             <span className="text-purple font-bold px-2 py-1 rounded">
               Data Scientist
-            </span>{" "}
-            and a{" "}
+            </span>
+            and a
             <span className="text-purple font-bold px-2 py-1 rounded">
               Machine Learning
             </span>{" "}
-            enthusiast, beside this i'm a{" "}
+            enthusiast. beside this i'm a{" "}
             <span className="text-purple font-bold px-2 py-1 rounded">
               UI/UX
             </span>{" "}

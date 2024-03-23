@@ -5,136 +5,51 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    title: "Discord Clone",
-    technologies: [
-      "Next.js 13",
-      "React Hook Form",
-      "Zustand",
-      "Shaders",
-      "Typescript",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
-    isLive: "t",
+    title: "Banking System",
+    technologies: ["Python", "SQLite"],
+    backgroundImage: "../../bm.png",
+    link: "https://github.com/theanupamkumar1/banking-system-with-sqlite-db",
+    isOnGithub: "t",
   },
   {
     id: 2,
-    title: "Spotify Clone",
-    technologies: [
-      "Next.js 13",
-      "React Hook Form",
-      "Zustand",
-      "Radix UI",
-      "Typescript",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
+    title: "Mental Fitness Tracker",
+    technologies: ["Numpy", "Pandas", "MatplotLib", "SK-Learn", "Python"],
+    backgroundImage: "../../mental-fi.png",
+    link: "https://github.com/theanupamkumar1/Mental-Fitness-Tracker",
     isOnGithub: "t",
   },
   {
     id: 3,
-    title: "Amazon Clone",
+    title: "Responsive Portfolio",
     technologies: [
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "Next.js 13",
-      "Next Auth",
-      "React",
-      "Hook Form",
+      "React.js",
+      "Daisy ui",
+      "Email.js",
       "Typescript",
       "Tailwind CSS",
+      "Vercel",
     ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
-    isOnGithub: "t",
+    backgroundImage: "../../poertfolio.png",
+    link: "https://www.theanupamkumar.me/",
+    isLive: "t",
   },
   {
     id: 4,
-    title: "DALL-E Clone",
-    technologies: [
-      "OpenAI",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
-    isLive: "True",
+    title: "Python Projects",
+    technologies: ["Vannila Python", "py Lib", "py framworks"],
+    backgroundImage: "../../py.png",
+    link: "https://github.com/theanupamkumar1/python_projects",
+    isOnGithub: "True",
   },
+
   {
     id: 4,
-    title: "DALL-E Clone",
-    technologies: [
-      "OpenAI",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
+    title: "Domain-Compare",
+    technologies: ["LLms", "MERN", "Tailwind CSS", "Langchain", "Azure"],
+    backgroundImage: "../../domain.png",
     link: "https://github.com/theanupamkumar1?tab=repositories",
-    isLive: "",
-  },
-  {
-    id: 4,
-    title: "DALL-E Clone",
-    technologies: [
-      "OpenAI",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
-  },
-  {
-    id: 4,
-    title: "DALL-E Clone",
-    technologies: [
-      "OpenAI",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
-  },
-  {
-    id: 4,
-    title: "DALL-E Clone",
-    technologies: [
-      "OpenAI",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
-  },
-  {
-    id: 4,
-    title: "DALL-E Clone",
-    technologies: [
-      "OpenAI",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    backgroundImage: "../../discord-clone.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
+    isOngoing: "r",
   },
 ];
 
@@ -161,6 +76,7 @@ const ProjectCard = ({ project }) => (
         <div className="absolute top-0 right-0 bg-green-500 text-white px-2 py-1 rounded-bl-md overflow-visible z-10">
           {project.isLive && "Live"}
           {project.isOnGithub && "On Github"}
+          {project.isOngoing && "Ongoing"}
         </div>
       </a>
     </div>
@@ -173,10 +89,18 @@ const Project = () => (
       id="project"
       className=" relative flex flex-col items-center justify-center min-h-screen "
     >
-      <h2 className="top-20 text-5xl font-bold text-center mb-8 ">Projects</h2>
-      <div className="flex flex-col sm:flex-row overflow-y-auto scrollbar scrollbar-thumb-blue-500">
+      <h2 className="top-20 text-5xl font-bold text-center mb-8">
+        Projects
+        <hr className="w-24 h-1 mx-auto my-4 bg-purple border-0 rounded md:my-5 dark:bg-gray-700" />
+        {/* <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" /> */}
+      </h2>
+      <div className="flex flex-col sm:flex-row overflow-auto">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard
+            key={index}
+            project={project}
+            className="flex-shrink-0"
+          />
         ))}
       </div>
     </div>

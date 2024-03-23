@@ -42,12 +42,17 @@ const ContactMe = () => {
   };
 
   return (
-    <div className=" text-white py-16">
+    <div className=" py-16">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 id="contact" className="text-3xl font-bold mb-4 text-gray-700">
+        <h2
+          id="contact"
+          className="text-3xl font-bold mb-4 text-gray top-20 text-5xl font-bold text-center mb-8"
+        >
           Get in Touch
         </h2>
-        <div className="h-1 bg-purple-500 mb-8"></div>
+        <hr className="w-24 h-1 mx-auto my-4 bg-purple border-0 rounded md:my-5 dark:bg-gray-700" />
+
+        {/* <div className="h-1 bg-purple-500 mb-8"></div>   */}
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h3 className="text-xl font-semibold mb-4 text-gray-700">
@@ -93,6 +98,9 @@ const ContactMe = () => {
             </form>
           </div>
           <div className="md:w-1/2 md:pl-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-700">
+              Contact Me
+            </h3>
             <p className="mb-6 text-gray-700">
               Always available for freelance work if the right project comes
               along. Feel free to contact me!

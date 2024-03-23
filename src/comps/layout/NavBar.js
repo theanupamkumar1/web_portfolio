@@ -67,7 +67,7 @@ const NavBar = () => {
                 }
                 className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
               >
-                About
+                Me
               </button>
             </li>
             <li>
@@ -79,7 +79,7 @@ const NavBar = () => {
                 }
                 className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
               >
-                Skills
+                My Skills
               </button>
             </li>
             <li>
@@ -91,7 +91,7 @@ const NavBar = () => {
                 }
                 className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
               >
-                Project
+                Projects
               </button>
             </li>
             <li>
@@ -184,7 +184,7 @@ const NavBar = () => {
                 }}
                 className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
               >
-                About
+                Me
               </button>
             </li>
             <li>
@@ -197,7 +197,7 @@ const NavBar = () => {
                 }}
                 className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
               >
-                Skills
+                My Skills
               </button>
             </li>
             <li>
@@ -210,7 +210,7 @@ const NavBar = () => {
                 }}
                 className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
               >
-                Project
+                Projects
               </button>
             </li>
             <li>
