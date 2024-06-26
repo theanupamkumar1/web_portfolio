@@ -73,7 +73,7 @@ const HeroSection = () => {
           <div className="hero-image m-4  ">
             <img
               className="hero-image w-96 h-96 rounded-br-[150px] md:rounded-br-[200px]"
-              src="../../logo.png"
+              src="../../logo.webp"
               alt="Hero"
             />
           </div>
