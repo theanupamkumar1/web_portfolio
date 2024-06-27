@@ -10,6 +10,7 @@ import Projects from "../../pages/Projects";
 import Skills from "../../pages/Skills";
 import Services from "../../pages/Services";
 import ContactMe from "../../pages/Contact";
+import ExperiencePage from "../../pages/Experience";
 
 const Layout = () => {
   return (
@@ -25,6 +26,9 @@ const Layout = () => {
         <Projects />
       </div>
       <div>
+        <ExperiencePage />
+      </div>
+      <div>
         <Skills />
       </div>
       <div>
@@ -33,6 +37,7 @@ const Layout = () => {
       <div>
         <ContactMe />
       </div>
+      
     </>
   );
 };

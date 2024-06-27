@@ -124,6 +124,18 @@ body {
     color: #666;
   }
   
+  .hero-section {
+    display: flex;
+    flex-direction: column; /* This makes the stats appear below the hero-content */
+    /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the section takes full viewport height */
+  }
+  
+ 
+  .stats {
+    margin-top: 20px; /* Add some space between hero-content and stats */
+  }
   /* Responsive Styles */
   @media (max-width: 768px) {
     .hero-section {
