@@ -1,154 +1,80 @@
 import React, { useState, useEffect } from "react";
 import "./darkmode.css";
 
+const NavItem = ({ id, text, onClick }) => (
+  <li>
+    <button
+      onClick={() => onClick(id)}
+      className="hover:text-purple-600 text-gray-800 transition duration-300 cursor-pointer"
+    >
+      {text}
+    </button>
+  </li>
+);
+
+const SocialIcon = ({ href, icon }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
+  >
+    <i className={`fab fa-${icon}`}></i>
+  </a>
+);
+
 const NavBar = () => {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("darkMode")
-      ? localStorage.getItem("darkMode")
-      : "light"
-  );
-  const toggle = () => {
-    if (darkMode === "dark") {
-      setDarkMode("light");
-    } else {
-      setDarkMode("dark");
-    }
+  const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") || "light");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setDarkMode(darkMode === "dark" ? "light" : "dark");
+
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
   };
 
   useEffect(() => {
     localStorage.setItem("darkMode", darkMode);
-    const localtheme = localStorage.getItem("darkMode");
-    document.querySelector("html").setAttribute("data-theme", localtheme);
-  }, [darkMode]);
+    document.querySelector("html").setAttribute("data-theme", darkMode);
+    document.body.classList.toggle("overflow-hidden", isOpen);
+  }, [darkMode, isOpen]);
 
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-  }, [isOpen]);
+  const navItems = [
+    { id: "about", text: "Me" },
+    { id: "skills", text: "My Skills" },
+    { id: "project", text: "Projects" },
+    { id: "experience", text: "Experience" },
+    { id: "services", text: "Services" },
+    { id: "contact", text: "Contact" },
+  ];
+
+  const socialIcons = [
+    { href: "https://github.com/theanupamkumar1", icon: "github" },
+    { href: "https://twitter.com/the_anupamkumar", icon: "twitter" },
+    { href: "https://instagram.com/the_anupam_kumar", icon: "instagram" },
+    { href: "https://linkedin.com/in/theanupamkumar1", icon: "linkedin" },
+  ];
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 backdrop-filter backdrop-blur-lg bg-white/30 py-4 px-8 ${
-          darkMode === "dark" ? "dark-mode" : ""
-        }`}
-      >
+      <nav className={`fixed top-0 left-0 right-0 z-50 backdrop-filter backdrop-blur-lg bg-white/30 py-4 px-8 ${darkMode === "dark" ? "dark-mode" : ""}`}>
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-gray-800 hidden md:block">
-            Anupam
-          </div>
-          <div className="md:hidden">
-            {isOpen ? (
-              <button onClick={() => setIsOpen(false)}>
-                <i className="fa fa-times"></i>
-              </button>
-            ) : (
-              <button onClick={() => setIsOpen(true)}>
-                <i className="fa fa-bars"></i>
-              </button>
-            )}
-          </div>
+          <div className="text-2xl font-bold text-gray-800 hidden md:block">Anupam</div>
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <i className={`fa fa-${isOpen ? "times" : "bars"}`}></i>
+          </button>
 
-          <ul
-            className={`hidden md:flex space-x-4 text-gray-800 ${
-              isOpen ? "flex" : "hidden"
-            }`}
-          >
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Me
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("skills")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                My Skills
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("project")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Projects
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("services")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Services
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Contact
-              </button>
-            </li>
+          <ul className="hidden md:flex space-x-4 text-gray-800">
+            {navItems.map((item) => (
+              <NavItem key={item.id} {...item} onClick={scrollToSection} />
+            ))}
           </ul>
 
           <div className="flex space-x-4">
-            <a
-              href="https://github.com/theanupamkumar1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github text-gray-800 hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"></i>
-            </a>
-            <a
-              href="https://twitter.com/the_anupamkumar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter text-gray-800 hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"></i>
-            </a>
-            <a
-              href="https://instagram.com/the_anupam_kumar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram text-gray-800 hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"></i>
-            </a>
-            <a
-              href="https://linkedin.com/in/theanupamkumar1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin text-gray-800 hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"></i>
-            </a>
+            {socialIcons.map((icon, index) => (
+              <SocialIcon key={index} {...icon} />
+            ))}
           </div>
 
           <button
@@ -159,86 +85,25 @@ const NavBar = () => {
           </button>
         </div>
       </nav>
-      {/* mobile view menu bar  -----------------------------------------------------------------*/}
+
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-filter backdrop-blur-lg bg-white/30">
-          <ul className="flex flex-col space-y-4 text-gray-800 rounded-lg p-10 ">
+          <ul className="flex flex-col space-y-4 text-gray-800 rounded-lg p-10">
             <div className="md:hidden flex justify-end text-lg">
-              {isOpen ? (
-                <button onClick={() => setIsOpen(false)}>
-                  <i className="fa fa-times text-red-500"></i>
-                </button>
-              ) : (
-                <button onClick={() => setIsOpen(true)}>
-                  <i className="fa fa-bars text-green-500"></i>
-                </button>
-              )}
+              <button onClick={() => setIsOpen(false)}>
+                <i className="fa fa-times text-red-500"></i>
+              </button>
             </div>
-            <li>
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" });
-                  setIsOpen(false);
-                }}
-                className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Me
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("skills")
-                    .scrollIntoView({ behavior: "smooth" });
-                  setIsOpen(false);
-                }}
-                className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                My Skills
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("project")
-                    .scrollIntoView({ behavior: "smooth" });
-                  setIsOpen(false);
-                }}
-                className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Projects
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("services")
-                    .scrollIntoView({ behavior: "smooth" });
-                  setIsOpen(false);
-                }}
-                className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Services
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
-                  setIsOpen(false);
-                }}
-                className="text-2xl font-bold hover:text-purple-600 text-gray-800 hover:text-purple-600 transition duration-300 cursor-pointer"
-              >
-                Contact
-              </button>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-2xl font-bold hover:text-purple-600 text-gray-800 transition duration-300 cursor-pointer"
+                >
+                  {item.text}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       )}
