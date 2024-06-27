@@ -2,16 +2,15 @@ import React from "react";
 
 const skills = {
   Web_Dev: [
-    "MERN",
+    "MERN-Basic",
     "Bootstrap",
     "Tailwind",
-    "MySQL",
-    "Docker",
-    "Git",
-    "Jenkins",
+    "UI/UX-Figma",
+    "HTML-CSS-JS",
+    "Flask",
   ],
 
-  Languages: ["Python", "C/C++", "JavaScript", "SQL", "Java(basic)"],
+  Languages: ["Python", "C/C++", "JavaScript"],
   Data_Science: [
     "NumPy",
     "Pandas",
@@ -19,28 +18,32 @@ const skills = {
     "Matplotlib",
     "TensorFlow",
     "Keras",
-    "Data Visualization",
+    "Data Vis- PowerBI",
     "EDA",
+    "Web-Scraping"
+    
   ],
 
-  Blockchain: ["Multichain", "Openzeppline", "Solidity", "Chainlink", "ETH"],
-  AI_ML: [
-    "Supervised Learning",
-    "Unsupervised Learning",
+  
+  ML_Ops: [
+    "Classification",
+    "Regression",
     "Deep Learning",
     "Computer Vision",
     "Natural Language Processing (NLP)",
-    "Reinforcement Learning",
+   
     "PyTorch",
-    "Hugging Face Transformers",
-    "Prompt Engineering",
+    "Docker",
+    "MLflow",
+    "Dagshub",
+    "Github actions"
   ],
   Additional: [
     "Version Control Systems (Git, GitLab)",
     "Cloud Computing (Google Cloud)",
     "APIs (REST, GraphQL, Fast API)",
     "Content Creation (Editing, Research)",
-    "Soft Skills (Leadership, Critical Thinking)",
+    "Soft Skills ",
   ],
 };
 
@@ -79,7 +82,7 @@ const Skills = () => (
       </div>
       <div className="flex justify-center mt-20 ">
         <a
-          href="https://drive.google.com/file/d/1mW368ZjyNgGjofS7pAvdI9_i3S9CwQcp/view"
+          href="https://drive.google.com/file/d/1BOPgUi15ePeZOgz5IEOCLYoz9Lwcg-wI/view?usp=drive_link"
           download
           className="bg-purple-500 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
           target="_blank"
