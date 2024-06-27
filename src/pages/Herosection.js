@@ -86,8 +86,8 @@ const HeroSection = () => {
           <span className="stat-label">Projects Done</span>
         </div>
         <div className="stat flex flex-col items-center">
-          <span className="stat-value">99%</span>
-          <span className="stat-label">Happy Client</span>
+          <span className="stat-value">2yr+</span>
+          <span className="stat-label">Experience</span>
         </div>
         <div className="stat flex flex-col items-center">
           <span className="stat-value">2+</span>

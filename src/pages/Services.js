@@ -17,9 +17,9 @@ const Services = () => (
           ></div>
           <div className="relative">
             <div className="flex items-center justify-center mb-4"></div>
-            <h3 className="text-xl font-bold mb-2">Finetuning Models</h3>
+            <h3 className="text-xl font-bold mb-2">Python development</h3>
             <p className="text-sm">
-              Finetuning models and making models for specialized tasks
+              creating application & solution with python ecosystem
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Services = () => (
               Web Design
             </h3>
             <p className="text-sm drop-shadow-lg">
-              create stunning website, with MERN and no code platforms
+              create stunning website, with MERN and Flak.
             </p>
           </div>
         </div>
@@ -47,10 +47,9 @@ const Services = () => (
           ></div>
           <div className="relative">
             <div className="flex items-center justify-center mb-4"></div>
-            <h3 className="text-xl font-bold mb-2">AI implementation</h3>
+            <h3 className="text-xl font-bold mb-2">ML Modeling</h3>
             <p className="text-sm">
-              ntegrating artificial intelligence capabilities into applications
-              for smarter functionalities.
+              complete ML-Ops workflow with deployment & monitoring
             </p>
           </div>
         </div>
@@ -62,7 +61,7 @@ const Services = () => (
           <div className="relative">
             <div className="flex items-center justify-center mb-4"></div>
             <h3 className="text-xl font-bold mb-2">
-              AI-powered Content Generation
+              AI-Content Generation
             </h3>
             <p className="text-sm">
               Leveraging AI to generate creative and engaging content
@@ -79,10 +78,10 @@ const Services = () => (
           <div className="relative">
             <div className="flex items-center justify-center mb-4"></div>
             <h3 className="text-xl font-bold mb-2">
-              NLP and Generative AI Services
+              NLP and Gen AI 
             </h3>
             <p className="text-sm">
-              Offering services in Natural Language Processing and generative AI
+              interating NLP and Gen AI
               for advanced text handling and generation.
             </p>
           </div>
@@ -97,7 +96,7 @@ const Services = () => (
             <div className="flex items-center justify-center mb-4"></div>
             <h3 className="text-xl font-bold mb-2">Data Analysis</h3>
             <p className="text-sm">
-              Analyzing and interpreting complex datasets to aid in
+              Analyzing and interpreting complex datasets for 
               decision-making and predictions.
             </p>
           </div>
