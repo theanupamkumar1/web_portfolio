@@ -1,4 +1,4 @@
-/* darkmode.css */
+/* darkmode.css
 body[data-theme='dark'] {
     background-color: #333;
     color: #fff;
@@ -10,7 +10,7 @@ body[data-theme='dark'] {
   }
   
   body[data-theme='dark'] .hero-section {
-    background-color: #555;
+    background-color: #b53131;
   }
   
   body[data-theme='dark'] .hero-section {
@@ -89,9 +89,7 @@ body[data-theme='dark'] .text-white {
   color: #fff;
 }
 
-body[data-theme='dark'] .text-gray-300 {
-  color: #aaa;
-}
+
 
 body[data-theme='dark'] .bg-purple-500 {
   background-color: #fff;
@@ -108,4 +106,30 @@ body[data-theme='dark'] .border-purple {
 
 body[data-theme='dark'] .border-skyblue {
   border-color: #888;
+}
+
+#experience {
+  background-color: #414141;
+}
+*/
+body[data-theme='dark'] .exp{
+  background-color: #1d232a;
+  
+}
+body[data-theme='dark'] .card{
+  background-color: #1d232a;  
+  
+} 
+body[data-theme='dark'] .exp_txt{
+
+  color: #ecdfdf;
+}  
+
+
+#experience[data-theme='dark'] {
+  background-color: #1d232a;
+}
+
+body[data-theme='dark'] .text-gray-800:hover {
+  color: #f4f5f7; 
 }

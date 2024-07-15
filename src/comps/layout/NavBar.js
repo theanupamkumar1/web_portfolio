@@ -24,7 +24,9 @@ const SocialIcon = ({ href, icon }) => (
 );
 
 const NavBar = () => {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") || "light");
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") || "light"
+  );
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setDarkMode(darkMode === "dark" ? "light" : "dark");
@@ -36,7 +38,10 @@ const NavBar = () => {
 
   useEffect(() => {
     localStorage.setItem("darkMode", darkMode);
+    // document.querySelector("div").setAttribute("data-theme", darkMode);
+    document.querySelector("#experience").setAttribute("data-theme", darkMode);
     document.querySelector("html").setAttribute("data-theme", darkMode);
+    document.querySelector("body").setAttribute("data-theme", darkMode);
     document.body.classList.toggle("overflow-hidden", isOpen);
   }, [darkMode, isOpen]);
 
@@ -58,9 +63,13 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 backdrop-filter backdrop-blur-lg bg-white/30 py-4 px-8 ${darkMode === "dark" ? "dark-mode" : ""}`}>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 backdrop-filter backdrop-blur-lg bg-white/30 py-4 px-8`}
+      >
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-gray-800 hidden md:block">Anupam</div>
+          <div className="text-2xl font-bold text-gray-800 hidden md:block">
+            Anupam
+          </div>
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <i className={`fa fa-${isOpen ? "times" : "bars"}`}></i>
           </button>
