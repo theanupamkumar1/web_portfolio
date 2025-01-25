@@ -30,9 +30,7 @@ const Layout = () => {
       <div>
         <ExperiencePage />
       </div>
-      <div>
-        <ExperiencePage />
-      </div>
+
       <div>
         <Skills />
       </div>
@@ -45,7 +43,6 @@ const Layout = () => {
       <div>
         <ContactMe />
       </div>
-      
     </>
   );
 };
