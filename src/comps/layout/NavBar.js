@@ -52,6 +52,7 @@ const NavBar = () => {
     { id: "experience", text: "Experience" },
     { id: "services", text: "Services" },
     { id: "contact", text: "Contact" },
+    { id: "blog", text: "Blogs" },
   ];
 
   const socialIcons = [

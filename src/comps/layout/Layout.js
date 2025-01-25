@@ -11,6 +11,8 @@ import Skills from "../../pages/Skills";
 import Services from "../../pages/Services";
 import ContactMe from "../../pages/Contact";
 import ExperiencePage from "../../pages/Experience";
+// import Blog from "../../pages/BlogSection";
+import BlogSection from "../../pages/BlogSection";
 
 const Layout = () => {
   return (
@@ -35,9 +37,11 @@ const Layout = () => {
         <Services />
       </div>
       <div>
+        <BlogSection />
+      </div>
+      <div>
         <ContactMe />
       </div>
-      
     </>
   );
 };
