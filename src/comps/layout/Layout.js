@@ -31,6 +31,9 @@ const Layout = () => {
         <ExperiencePage />
       </div>
       <div>
+        <ExperiencePage />
+      </div>
+      <div>
         <Skills />
       </div>
       <div>
@@ -42,6 +45,7 @@ const Layout = () => {
       <div>
         <ContactMe />
       </div>
+      
     </>
   );
 };
