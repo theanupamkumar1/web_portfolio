@@ -30,6 +30,7 @@ const Layout = () => {
       <div>
         <ExperiencePage />
       </div>
+
       <div>
         <Skills />
       </div>

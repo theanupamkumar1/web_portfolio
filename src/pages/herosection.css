@@ -1,4 +1,4 @@
-/* General Styles */
+General Styles
 
 /* .hero-section{
     background-color: #d63939;
@@ -126,15 +126,23 @@ body {
   
   .hero-section {
     display: flex;
-    flex-direction: column; /* This makes the stats appear below the hero-content */
-    /* Center content horizontally */
+    flex-direction: column;
+    align-items: center; /* Add this to center content horizontally */
     justify-content: center; /* Center content vertically */
-    min-height: 100vh; /* Ensure the section takes full viewport height */
+    width: 100%;
+    padding: 2rem 0; /* Add padding for spacing */
   }
   
  
   .stats {
-    margin-top: 20px; /* Add some space between hero-content and stats */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   /* Responsive Styles */
   @media (max-width: 768px) {
