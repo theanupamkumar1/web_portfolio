@@ -22,7 +22,7 @@ const HeroSection = () => {
   // Keywords to highlight
   const highlightKeywords = [
     {
-      keyword: "AI Engineer",
+      keyword: "Python developer",
       className: "text-purple font-bold px-2 py-1 rounded",
     },
     {
@@ -30,10 +30,9 @@ const HeroSection = () => {
       className: "text-purple font-bold px-2 py-1 rounded",
     },
     {
-      keyword: "Machine Learning",
+      keyword: "AI/ML Engineer",
       className: "text-purple font-bold px-2 py-1 rounded",
     },
-    { keyword: "UI/UX", className: "text-purple font-bold px-2 py-1 rounded" },
   ];
 
   // Function to highlight keywords

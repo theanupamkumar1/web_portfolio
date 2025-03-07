@@ -133,3 +133,60 @@ body[data-theme='dark'] .exp_txt{
 body[data-theme='dark'] .text-gray-800:hover {
   color: #f4f5f7; 
 }
+
+
+/* Stats component dark mode styling */
+body[data-theme='dark'] .stats {
+  background-color: #1d232a; /* Dark background for stats container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body[data-theme='dark'] .stat-value {
+  color: #fff; /* White text for stat values */
+}
+
+body[data-theme='dark'] .stat-label {
+  color: #aaa; /* Light gray text for stat labels */
+}
+
+
+/* Blog section dark mode styling */
+body[data-theme='dark'] #blog {
+  background-color: #1d232a;
+}
+
+body[data-theme='dark'] .blog-card {
+  background-color: #1f2937;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body[data-theme='dark'] .blog-title {
+  color: #a6adbb;
+}
+
+body[data-theme='dark'] .blog-excerpt {
+  color: #cbd5e0;
+}
+
+body[data-theme='dark'] .blog-date {
+  color: #a0aec0;
+}
+
+body[data-theme='dark'] .read-more {
+  color: #63b3ed;
+}
+
+/* body[data-theme='dark'] .blog-section h2 {
+  color: #fff;
+} */
+body[data-theme='dark'] .blog-section{
+  background-color: #1d232a;
+}
+body[data-theme='dark'] .card{
+  background-color: #1f2937;
+}
+
+
+body[data-theme='dark'] .card{
+  background-color: #1f2937;
+}

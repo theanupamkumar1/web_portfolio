@@ -75,7 +75,7 @@ const NavBar = () => {
             <i className={`fa fa-${isOpen ? "times" : "bars"}`}></i>
           </button>
 
-          <ul className="hidden md:flex space-x-4 text-gray-800">
+          <ul className="hidden md:flex space-x-4 text-gray-800 bold ">
             {navItems.map((item) => (
               <NavItem key={item.id} {...item} onClick={scrollToSection} />
             ))}
