@@ -30,22 +30,6 @@ const projects = [
     isOnGithub: true,
   },
   {
-    id: 1,
-    title: "Banking System",
-    technologies: ["Python", "SQLite"],
-    backgroundImage: "../../bm.png",
-    link: "https://github.com/theanupamkumar1/banking-system-with-sqlite-db",
-    isOnGithub: "t",
-  },
-  {
-    id: 2,
-    title: "Mental Fitness Tracker",
-    technologies: ["Numpy", "Pandas", "MatplotLib", "SK-Learn", "Python"],
-    backgroundImage: "../../mental-fi.png",
-    link: "https://github.com/theanupamkumar1/Mental-Fitness-Tracker",
-    isOnGithub: "t",
-  },
-  {
     id: 3,
     title: "Responsive Portfolio",
     technologies: [
@@ -60,23 +44,40 @@ const projects = [
     link: "https://www.theanupamkumar.me/",
     isLive: "t",
   },
-  {
-    id: 4,
-    title: "Python Projects",
-    technologies: ["Vannila Python", "py Lib", "py framworks"],
-    backgroundImage: "../../py.png",
-    link: "https://github.com/theanupamkumar1/python_projects",
-    isOnGithub: "True",
-  },
 
   {
     id: 4,
-    title: "Domain-Compare",
-    technologies: ["LLms", "MERN", "Tailwind CSS", "Langchain", "Azure"],
-    backgroundImage: "../../domain.png",
-    link: "https://github.com/theanupamkumar1?tab=repositories",
+    title: "Borrow Assitant",
+    technologies: ["NLP", "ML", "MongoDB", "word2vec"],
+    backgroundImage: "../../chotu.jpeg",
+    link: "https://github.com/theanupamkumar1/borrow-assistant",
+    isOnGithub: "True",
+  },
+  {
+    id: 5,
+    title: "Restaurant rating",
+    technologies: ["Flask", "SQLite", "EDA", "Model building"],
+    backgroundImage: "../../rr.jpeg",
+    link: "https://github.com/theanupamkumar1/restaurant-rating-prediction",
+    isOnGithub: "r",
+  },
+  {
+    id: 6,
+    title: "AutoBlog",
+    technologies: ["LLms", "Django", "Langchain", "grok", "RESTapi"],
+    backgroundImage: "../../autoblog.jpeg",
+    link: "https://github.com/theanupamkumar1/AutoBlog",
     isOngoing: "r",
   },
+  {
+    id: 7,
+    title: "AutoDoc",
+    technologies: ["LLms", "Django", "Langchain", "deepseek", "RESTapi"],
+    backgroundImage: "../../autodoc.jpeg",
+    link: "https://github.com/theanupamkumar1/AutoDoc",
+    isOngoing: "r",
+  },
+
   // Add more projects here...
 ];
 
