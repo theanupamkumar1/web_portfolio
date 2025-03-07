@@ -17,5 +17,3 @@ lucide-react>=0.300.0
 # Development Dependencies
 eslint>=8.55.0
 prettier>=3.1.1
-@types/react>=18.2.45
-@types/react-dom>=18.2.18
